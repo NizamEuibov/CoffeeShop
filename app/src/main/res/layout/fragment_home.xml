@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FE4D5D5"
+    android:paddingTop="20dp"
+    tools:context=".ui.theme.homeFragment.fragment.HomeFragment"
+    tools:ignore="RtlSymmetry">
+
+    <ImageButton
+        android:id="@+id/ibLocation"
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_location"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toTopOf="@id/tvSize"
+        app:layout_constraintEnd_toStartOf="@id/tvStreet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <TextView
+        android:id="@+id/tvStreet"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/hm_d_c_mil_k_si"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/ibLocation"
+        app:layout_constraintEnd_toStartOf="@id/ibSearch"
+        app:layout_constraintStart_toEndOf="@+id/ibLocation"
+        app:layout_constraintTop_toTopOf="@id/ibLocation" />
+
+
+    <ImageButton
+        android:id="@+id/ibSearch"
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_search"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/ibLocation"
+        app:layout_constraintEnd_toStartOf="@id/ibNotification"
+        app:layout_constraintStart_toEndOf="@id/tvStreet"
+        app:layout_constraintTop_toTopOf="@id/ibLocation" />
+
+    <ImageButton
+        android:id="@+id/ibNotification"
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="23dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_notification"
+        app:layout_constraintBottom_toBottomOf="@id/ibLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ibSearch"
+        app:layout_constraintTop_toTopOf="@id/ibLocation" />
+
+
+    <TextView
+        android:id="@+id/tvSize"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:text="@string/hal_haz_rda_aktiv_paket_yoxdur"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/ibLocation"
+        app:layout_constraintTop_toBottomOf="@id/tvStreet"
+        app:layout_constraintBottom_toTopOf="@id/bPayment1"/>
+
+
+    <Button
+        android:id="@+id/bPayment1"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/limitsiz_kofe_ucucn_abune_ol"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@id/ibNotification"
+        app:layout_constraintStart_toStartOf="@id/tvSize"
+        app:layout_constraintTop_toBottomOf="@id/tvSize"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bPayment1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintHeight_percent="0.5"
+        tools:listitem="@layout/item_home_coffeelist"
+      />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

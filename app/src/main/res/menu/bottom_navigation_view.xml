@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/sas_s_hif"
+        />
+
+    <item
+        android:id="@+id/qr"
+        android:icon="@drawable/ic_qr__2_"
+        android:title="@string/kofe_al" />
+
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/daha_ox" />
+
+</menu>

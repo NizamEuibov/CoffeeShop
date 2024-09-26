@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="23dp"
+    tools:context=".ui.theme.paymentfragments.PaymentFragment">
+
+    <ImageButton
+        android:id="@+id/ibBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/back_shape"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCard"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="142dp"
+        android:text="@string/kart_m_lumatlar"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/ibBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ibBack"
+        app:layout_constraintTop_toTopOf="@id/ibBack" />
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kart_m_lumatlar_n_daxil_edin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@id/etCard"
+        app:layout_constraintStart_toStartOf="@id/ibBack"
+        app:layout_constraintTop_toBottomOf="@id/ibBack" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCard"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@drawable/shape_edittext"
+        android:hint="@string/xxxxxxxxxxxxxxxx"
+        android:inputType="number"
+        android:maxLength="19"
+        android:layout_marginTop="16dp"
+        android:paddingStart="13dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvInformation"
+        tools:ignore="RtlSymmetry" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etYear"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:background="@drawable/shape_edittext"
+        android:hint="@string/mm_yy"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/etCVV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etCard"
+        tools:ignore="RtlSymmetry" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCVV"
+        android:layout_width="80dp"
+        android:layout_height="43dp"
+        android:background="@drawable/shape_edittext"
+        android:hint="@string/cvv"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingStart="13dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/etYear"
+        app:layout_constraintStart_toEndOf="@id/etYear"
+        app:layout_constraintTop_toTopOf="@id/etYear"
+        tools:ignore="RtlSymmetry" />
+
+
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/d_ni_in_detallar"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etYear" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödənişin məbləği"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tvPayment"
+        app:layout_constraintTop_toBottomOf="@id/tvPayment" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:text="@string/_60_00_azn"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ödənişin ID-si"
+        android:textColor="#020202"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/textView1"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        android:text="@string/_123456789"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+
+    <Button
+        android:id="@+id/bPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/d_v_abun_ol_60_azn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/bCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+
+    <Button
+        android:id="@+id/bCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/l_v_et"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="20dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

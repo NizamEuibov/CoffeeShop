@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="271dp"
+    android:layout_marginEnd="6dp"
+    app:cardCornerRadius="24dp"
+    android:layout_marginBottom="28dp"
+    android:layout_marginStart="20dp"
+    app:cardBackgroundColor="#D6C2B6"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivCoffeeShop"
+            android:layout_width="202dp"
+            android:layout_height="185dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/RoundedRadius6"
+            android:src="@drawable/icon9_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvCoffeeShopName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCoffeeShopName"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:text="Bluebird Renessans"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintBottom_toTopOf="@id/tvDestination"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCoffeeShop" />
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.55 km məsafədə - Açıq"
+            android:textSize="14sp"
+            android:textColor="#242424"
+            app:layout_constraintStart_toStartOf="@id/tvCoffeeShopName"
+            app:layout_constraintTop_toBottomOf="@id/tvCoffeeShopName"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

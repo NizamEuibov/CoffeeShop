@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.theme.menufragment.MenuFragment">
+
+
+    <TextView
+        android:id="@+id/tvCoffeeShopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="fxkhgckhcghj,"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/rvMenuImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenuImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCoffeeShopName" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/nvan"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/rvMenuImage"
+        app:layout_constraintTop_toBottomOf="@id/rvMenuImage" />
+
+    <TextView
+        android:id="@+id/tvStreetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nvan"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvAddress"
+        app:layout_constraintEnd_toEndOf="@id/ibLocation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/tvAddress"
+        app:layout_constraintTop_toTopOf="@id/tvAddress"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/ibLocation"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_location"
+        android:src="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="@id/rvMenuImage"
+        app:layout_constraintTop_toTopOf="@id/tvStreetName"
+        android:contentDescription="@string/todo"/>
+
+
+    <TextView
+        android:id="@+id/tvWorkTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/saatlar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress" />
+
+
+    <TextView
+        android:id="@+id/tvWorkHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saatlar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvWorkTime"
+        app:layout_constraintStart_toEndOf="@id/tvWorkTime"
+        app:layout_constraintTop_toTopOf="@id/tvWorkTime" />
+
+
+    <Button
+        android:id="@+id/bSubscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="23dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/abun_ni_ld_et"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

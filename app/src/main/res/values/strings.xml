@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CoffeePlus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="hm_d_c_mil_k_si">Əhməd Cəmil Küçəsi</string>
+    <string name="balans">Balans : </string>
+    <string name="balansi_artir">Balansi artir</string>
+    <string name="limitsiz_kofe_ucucn_abune_ol">Limitsiz kofe ucucn abune ol</string>
+    <string name="abone_olun">Abone olun</string>
+    <string name="sas_s_hif">Əsas səhifə</string>
+    <string name="kofe_al">Kofe al</string>
+    <string name="daha_ox">Daha çox</string>
+    <string name="hal_haz_rda_aktiv_paket_yoxdur">Hal-hazırda aktiv paket yoxdur</string>
+    <string name="yax_nl_qda">Yaxınlıqda</string>
+    <string name="d_v_abun_ol_60_azn">Ödəniş et</string>
+    <string name="nvan">"Ünvan: "</string>
+    <string name="saatlar">İş saatları :</string>
+    <string name="abun_ni_ld_et">Abunəni əldə et</string>
+    <string name="kart_m_lumatlar">Kart məlumatları</string>
+    <string name="kart_m_lumatlar_n_daxil_edin">Kart məlumatlarını daxil edin</string>
+    <string name="xxxxxxxxxxxxxxxx">xxxxxxxxxxxxxxxx</string>
+    <string name="cvv">CVV</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="d_ni_in_detallar">Ödənişin detalları</string>
+    <string name="l_v_et">Ləğv et</string>
+    <string name="_60_00_azn">60.00 AZN</string>
+    <string name="_123456789">123456789</string>
+</resources>
